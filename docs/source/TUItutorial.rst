@@ -154,8 +154,8 @@ typing into the terminal:
 In this directory, the batch files of any test cases are provided. The batch file to execute
 the ELMER test case is called batchFile_optical_elmer.dat. To activate the ELMER capabilities
 in any HEAT batch file, the flag elmer is added under the column output. Any input required
-for the ELMER run must be stored in the subdirectory elmer of the respective machine directory,
-in this case nstx. To access this folder, the user must enter the following into the terminal:
+for the ELMER run must be stored in the subdirectory elmer of the respective machine directory, 
+here nstx. To access this folder, the user must enter the following into the terminal:
 
   .. code-block:: bash
 
