@@ -167,9 +167,8 @@ The subdirectory contains three key files:
   2) the boundary ELMER file caseTemp.sif, which summarizes any information to initiate the ELMER simulation including material properties, the partial differential equations to be solved, and the initial and all surface boundary conditions
   3)  the ELMER input file elmerFile.csv, which summarizes the respective input files and names required for the simulation (PFCname, .SIF, meshFile). PFCname specifies the name of the PFC element to be examined within the .stp file provided for the HEAT run.
 
-A FEM mesh file is not mandatory to provide, but is recommended: Within HEAT, a generic FEM
-mesh based on the provided .stp file and PFCname would be generated. Dedicated FEM boundary
-conditions must be predefined during mesh generation. The ELMER output is stored in a data
+A FEM mesh file is not mandatory to provide, but is recommended to incorporate FEM boundary conditions, which must be predefined during mesh generation: the FEM mesh generator incorporated into HEAT provides a
+generic mesh based on the provided .stp file and PFCname without dedicated boundary conditions. The ELMER output is stored in a data
 format compatible with HEAT and ParaView for post-processing.
 
 Running a 3D Plasma heat flux simulation using M3DC1 output
