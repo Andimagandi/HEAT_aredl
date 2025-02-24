@@ -136,7 +136,7 @@ Running an Elmer FEM simulation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Next to the previous cases, HEAT runs can also be connected with FEM simulations utilizing
 HEAT outputs. The test case presented here connects HEAT optical heat flux calculations
-with FEM temperature simulations realized with the open-source FEM solver ELMER. To execute
+with FEM temperature simulations realized with the open-source FEM solver ELMER. To run
 this test case, the user has to execute in the terminal (in the same directory as in the
 previous test cases above):
 
@@ -162,10 +162,11 @@ here nstx. To access this folder, the user must enter the following into the ter
     cd  /root/source/HEAT/ tests/integrationTests/nstxuTestCase/nstx/elmer
 
 The subdirectory contains three key files: 
-1) the custom HEAT library HEATLibrary.so, which interpolates and maps the HEAT-calculated
+
+* 1) the custom HEAT library HEATLibrary.so, which interpolates and maps the HEAT-calculated
 heat flux profile to the FEM mesh surface in order to obtain the temperature gradient which
 serves as an input to solve Fourier’s heat conduction equation.
-2) the boundary ELMER file caseTemp.sif, which summarizes any information to initiate the
+* 2) the boundary ELMER file caseTemp.sif, which summarizes any information to initiate the
 ELMER simulation including material properties, the partial differential equations to be solved,
 and the initial and all surface boundary conditions
 3) the ELMER input file elmerFile.csv, which summarizes the respective input files and names
