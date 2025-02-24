@@ -163,13 +163,13 @@ here nstx. To access this folder, the user must enter the following into the ter
 
 The subdirectory contains three key files: 
 
-* 1) the custom HEAT library HEATLibrary.so, which interpolates and maps the HEAT-calculated
+* the custom HEAT library HEATLibrary.so, which interpolates and maps the HEAT-calculated
 heat flux profile to the FEM mesh surface in order to obtain the temperature gradient which
 serves as an input to solve Fourier’s heat conduction equation.
-* 2) the boundary ELMER file caseTemp.sif, which summarizes any information to initiate the
+* the boundary ELMER file caseTemp.sif, which summarizes any information to initiate the
 ELMER simulation including material properties, the partial differential equations to be solved,
 and the initial and all surface boundary conditions
-3) the ELMER input file elmerFile.csv, which summarizes the respective input files and names
+* the ELMER input file elmerFile.csv, which summarizes the respective input files and names
 required for the simulation (PFCname, .SIF, meshFile). PFCname specifies the name of the PFC
 element to be examined within the .stp file provided for the HEAT run.
 A FEM mesh file is not mandatory to provide, but is recommended: Within HEAT, a generic FEM
