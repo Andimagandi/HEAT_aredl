@@ -148,6 +148,7 @@ For an overview of the requirements for ELMER, the user needs to change the dire
 typing into the terminal: 
 
   .. code-block:: bash
+
     cd  /root/source/HEAT/ tests/integrationTests/nstxuTestCase
 
 In this directory, the batch files of any test cases are provided. The batch file to execute
@@ -157,6 +158,7 @@ for the ELMER run must be stored in the subdirectory elmer of the respective mac
 in this case nstx. To access this folder, the user must enter the following into the terminal:
 
   .. code-block:: bash
+
     cd  /root/source/HEAT/ tests/integrationTests/nstxuTestCase/nstx/elmer
 
 The subdirectory contains three key files: 
