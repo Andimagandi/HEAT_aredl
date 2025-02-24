@@ -134,28 +134,19 @@ TO BE COMPLETED
 
 Running an Elmer FEM simulation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Next to the previous cases, HEAT runs can also be connected with FEM simulations utilizing
-HEAT outputs. The test case presented here connects HEAT optical heat flux calculations
-with FEM temperature simulations realized with the open-source FEM solver ELMER. To run
-this test case, the user has to execute in the terminal (in the same directory as in the
-previous test cases above):
+Next to the previous cases, HEAT runs can also be connected with FEM simulations utilizing HEAT outputs. The test case presented here connects HEAT optical heat flux calculations with FEM temperature simulations realized with the open-source FEM solver ELMER. To run this test case, the user has to execute in the terminal (in the same directory as in the previous test cases above):
 
   .. code-block:: bash
 
     ./ runTerminalModeTestOpticalElmer
 
-For an overview of the requirements for ELMER, the user needs to change the directoty by
-typing into the terminal: 
+For an overview of the requirements for ELMER, the user needs to change the directoty by typing into the terminal: 
 
   .. code-block:: bash
 
     cd  /root/source/HEAT/ tests/integrationTests/nstxuTestCase
 
-In this directory, the batch files of any test cases are provided. The batch file to execute
-the ELMER test case is called batchFile_optical_elmer.dat. To activate the ELMER capabilities
-in any HEAT batch file, the flag elmer is added under the column output. Any input required
-for the ELMER run must be stored in the subdirectory elmer of the respective machine directory, 
-here nstx. To access this folder, the user must enter the following into the terminal:
+In this directory, the batch files of any test cases are provided. The batch file to execute the ELMER test case is called batchFile_optical_elmer.dat. To activate the ELMER capabilities in any HEAT batch file, the flag elmer is added under the column output. Any input required for the ELMER run must be stored in the subdirectory elmer of the respective machine directory,  here nstx. To access this folder, the user must enter the following into the terminal:
 
   .. code-block:: bash
 
@@ -167,9 +158,7 @@ The subdirectory contains three key files:
   2) the boundary ELMER file caseTemp.sif, which summarizes any information to initiate the ELMER simulation including material properties, the partial differential equations to be solved, and the initial and all surface boundary conditions
   3)  the ELMER input file elmerFile.csv, which summarizes the respective input files and names required for the simulation (PFCname, .SIF, meshFile). PFCname specifies the name of the PFC element to be examined within the .stp file provided for the HEAT run.
 
-A FEM mesh file is not mandatory to provide, but is recommended to incorporate FEM boundary conditions, which must be predefined during mesh generation: the FEM mesh generator incorporated into HEAT provides a
-generic mesh based on the provided .stp file and PFCname without dedicated boundary conditions. The ELMER output is stored in a data
-format compatible with HEAT and ParaView for post-processing.
+A FEM mesh file is not mandatory to provide, but is recommended to incorporate FEM boundary conditions, which must be predefined during mesh generation: the FEM mesh generator incorporated into HEAT provides a generic mesh based on the provided .stp file and PFCname without dedicated boundary conditions. The ELMER output is stored in a data format compatible with HEAT and ParaView for post-processing.
 
 Running a 3D Plasma heat flux simulation using M3DC1 output
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
